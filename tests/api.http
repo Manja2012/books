@@ -1,0 +1,23 @@
+@baseUrlLocal = http://localhost:3000
+@baseUrlRemote = https://jesaispasencore.netlify.app
+
+@baseUrl = {{baseUrlLocal}}
+
+###
+{{baseUrl}}
+
+
+###
+{{baseUrl}}/api/v1/books
+
+###
+POST {{baseUrl}}/api/v1/books
+Content-Type: application/json
+
+{
+    "titre": "Le titre",
+    "sous_titre": "Le sous-titre",
+    "auteur": "l’auteur",
+    "date": 2016,
+    "description": "La description"
+}
